@@ -1,0 +1,12 @@
+You need to have Python 2.7 installed in order to run this script.
+
+Google Developer credentials go into credentials.json
+
+Channel names (not necessarily always the channel username) to watch and post video comments to go in channels.txt with only one channel per line.
+
+The comment that you want to have posted on each video goes in comment.txt
+
+The redirect URI in your Google App settings needs to be set to "http://localhost:8090" in order to authenticate your Youtube account with the bot. 
+
+Once you've authenticated, the bot will create a file called credentials.dat. Only delete this file if you think that you need to have your account reauthenticated, otherwise do not move or delete it.
+

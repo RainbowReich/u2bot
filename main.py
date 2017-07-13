@@ -44,7 +44,7 @@ flow = OAuth2WebServerFlow(client_id, client_secret, scope)
 
 def main():
     youtube = get_authenticated_service()
-    comment = "Hi there :)"
+    comment = open("comment.txt", "r").read()
     channels = open("channels.txt","r").read().split('\n')
     latest_videos = { c: "" for c in channels }
     while True:
